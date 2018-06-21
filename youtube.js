@@ -94,15 +94,15 @@ var YoutubeVideo = /** @class */ (function () {
         };
         //method for showing related videos
         this.getRelatedVideos = function () {
-            console.log('Showing some related videos!');
+            console.log("Showing some related videos!");
         };
         //method to subscribe to the channel
         this.subscribe = function () {
-            console.log('Great! You just subscribed to ' + _this.nameOfTheChannel + '.');
+            console.log("Great! You just subscribed to " + _this.nameOfTheChannel + ".");
         };
         //method to add video to watch later list
         this.addToWatchLater = function () {
-            console.log('Added to watch later.');
+            console.log("Added to watch later.");
         };
     }
     return YoutubeVideo;
@@ -113,9 +113,9 @@ console.log('----------------------');
 var shapeOfYou = new YoutubeVideo('Shape of you - Ed Sheeran', 259355, 210951, 4000, true, 3000, 'Ed Sheeran', new Date(), 'This is my new video. Hope you like it.', 'some thumbnail url');
 console.log(shapeOfYou.getTitle());
 console.log(shapeOfYou.getPublishDate());
-console.log('Number of view: ' + shapeOfYou.getNumberOfViews());
-console.log('Number of likes: ' + shapeOfYou.getNumberOfLikes());
-console.log('Channel name: ' + shapeOfYou.getNameOfTheChannel());
+console.log("Number of view: " + shapeOfYou.getNumberOfViews());
+console.log("Number of likes: " + shapeOfYou.getNumberOfLikes());
+console.log("Channel name: " + shapeOfYou.getNameOfTheChannel());
 //lets try to update the title of the video
 shapeOfYou.setTitle('Shape of you by Ed Sheeran - Updated video!');
 //logging the updated value of title

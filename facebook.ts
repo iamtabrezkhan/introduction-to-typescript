@@ -168,6 +168,16 @@ class FacebookProfile {
         return age;
     }
 
+    //add friend method
+    addFriend = (friend:string) => {
+        console.log(`Wow!! You just added ${friend} as your friend.`);
+    }
+
+    //remove friend method
+    removeFriend = (friend:string) => {
+        console.log(`Oops!!! You just removed ${friend} from your friend list, hope everthing's okay.`);
+    }
+
 }
 
 console.log('----------------------');
@@ -178,6 +188,7 @@ let isaKhan = new FacebookProfile('Isa', 'Khan', 'khan.isa001', 24, 9, 1996, 807
 console.log(isaKhan.getFullName());
 console.log(isaKhan.getAge());
 console.log(isaKhan.getPhoneNumber());
+isaKhan.addFriend('Ashwani');
 //iterating over work array and logging it
 let work = isaKhan.getWork();
 for(let w of work) {
